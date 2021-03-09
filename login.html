@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html manifest=".appcache">
+<head>
+	<title>Infinity Digital Agency</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/467ae1d3df.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+	<script>
+		
+		function validateEmail(i) {
+			console.log("asd");
+			if(!checkEmail(i.value)){
+				$(i).css("background-color", "red");
+			}
+			else {
+				$(i).css("background-color", "lightgreen");
+			}
+		}
+		function validatePassowrd(i){
+			console.log(i.value.length);
+			if(i.value.length < 6)
+				$(i).css("background-color", "cyan");
+			else
+				$(i).css("background-color", "orange");
+		}
+	</script>
+	<meta charset="UTF-8">
+	<style type="text/css">
+
+		body  {
+			background: url(images/prishtina_night.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			background-origin: padding-box;
+		}
+		#loginPanel {
+      border: 6px solid #fdfdfd90;
+			border-radius: 30px;
+			box-shadow: 0px 0px 2000px rgb(23, 195, 204);
+			background: #2c2e2e90;
+			background-image: url(./images/line.png), url(./images/backline.png);
+			background-size: 1%;
+		  	-webkit-animation-name: loginpanelbganimation; 
+		  	-webkit-animation-duration: 4s;
+		  	animation-name: loginpanelbganimation;
+		  	animation-duration: 3s;
+		  	background-position: 0;
+		}
+		#signInBTN {
+			background-image: -webkit-linear-gradient(left, rgb(226, 73, 12), rgb(0, 0, 0)); 
+			border: 1; padding: 5px 10px; color: white; 
+			font-weight: bold; 
+			font-size: 18px; 
+			text-shadow: 1px 1px 1px black;	
+		  -webkit-animation-name: btnsigninanimation; 
+		  -webkit-animation-duration: 4s; 
+		  animation-name: btnsigninanimation;
+		  animation-duration: 4s;
+		}
+		@-webkit-keyframes btnsigninanimation {
+	  		from {background-image: -webkit-linear-gradient(left, rgb(255, 20, 20)rgb(0, 0, 0)le);}
+  			to {background-image: -webkit-linear-gradient(left, rgb(0, 0, 0), rgb(255, 60, 0));}
+		}
+		@keyframes btnsigninanimation {
+	  		from {background-image: -webkit-linear-gradient(left, rgb(226, 73, 12), rgb(0, 0, 0));}
+  			to {background-image: -webkit-linear-gradient(left, rgb(0, 0, 0), rgb(226, 73, 12));}
+		}
+		@-webkit-keyframes loginpanelbganimation {
+	  		from {background-size: 1%;
+	  			background-position: 10px;}
+  			to {background-size: 5%;
+          background-position: 0px;}}
+          
+		@keyframes loginpanelbganimation {
+	  		from {background-size: 1%;
+	  			background-position: 10px;}
+  			to {background-size: 5%;
+  				background-position: 0px;}
+
+		}
+		.row{
+			margin: auto;
+		}
+		.row > .col25 {
+	width: 25%;
+}
+.row > .col50 {
+	width: 50%;	
+	margin: auto;
+}
+
+.clear100 {
+	height: 100px;
+	clear: both;
+}
+
+.center {
+	text-align: center;
+}
+
+.text-white {
+	color: white !important;
+}
+#email:focus, #password:focus{
+	outline: none;
+}
+	</style>
+</head>
+<body>
+
+	<nav>
+		<ul class="menu">
+			<li class="logo"><a href="index.html" id="home"><img src="logo.png" id="foto"></a></li>
+			<li class="item"><a href="index.html">Home</a></li>
+			<li class="item"><a href="about_us.html">About us</a></li>
+			<li class="item"><a href="services.html">Services</a></li>
+			<li class="item"><a href="contacts.html">Contact Us</a></li>
+			<li class="item"><a href="projects.html">Projects</a></li>
+			<li class="item"><a href="others.html">Price List</a></li>
+			</li>
+			<li class="item button"><a href="login.html">LOG IN</a></li>
+			<li class="toggle"><span class="bars"></span></li>
+		</ul>
+	</nav>
+
+
+	<div class="clear100"></div>
+	<div class="row">
+		<div class="col25"></div>
+		<div style="height: 70vh;" class="col50">
+			<div style="margin-top: -25px; height: 250px;" id="loginPanel" class="center text-white">
+			<canvas id="kanvasi" width="230" height="60">Your browser does not support the HTML5 canvas tag.</canvas>
+				<form id="forma" action="#" method="POST" style="padding: 0 200px; " autocomplete="off">
+					<label for="email">Email:</label><br/>
+					<input style="width: 100%; height: 45px;" autofocus type="email" id="email" name="email" placeholder="emri.mbiemri@student.uni-pr.edu" required="required"  onkeyup="validateEmail(this);">
+					<label for="password" >Password:</label>
+					<input maxlength="50" style="width: 77%; border-radius: 5px; height: 25px;" onkeyup="validatePassowrd(this)" type="password" id="password"  pattern=".{6,}" title="Me shume se 6 karaktere" name="password" placeholder="Password" required="required">
+					
+					<br/><br/>
+					<keygen name="key"></label>
+
+				</form>
+				<input form="forma" type="submit" value="Log In" id="signInBTN">
+				<input form="forma" type="reset" value="RESET">
+
+			</div><br>
+		</div>
+		<div class="col25">
+		</div>
+	</div>
+	<script type="text/javascript">
+		var ora = new Date().getHours();
+		if(ora >= 5 && ora < 17){
+			//dita
+			$("body").css("background", "url(images/city.jpg) no-repeat center center fixed");
+		}
+		$("#showPassword").click(function(){
+			event.preventDefault();
+			if($("#password").attr("type") == "text"){
+				$("#password").attr("type","password");
+				$("#showPassword").children().removeClass("fa-eye-slash").addClass("fa-eye");
+			}
+			else {
+				$("#password").attr("type","text");
+				$("#showPassword").children().removeClass("fa-eye").addClass("fa-eye-slash");
+			}
+		});
+		var c = document.getElementById("kanvasi");
+		var ctx = c.getContext("2d");
+		ctx.font = "30px Arial";
+		ctx.fillStyle ="white";
+		ctx.fillText("    Infinity D.A",10,50);
+	</script>
+	
+
+<div class="footer">
+	<div class="divv" style="flex-grow: 1; flex: 30%;">
+	<h1 style="margin-bottom: 2px; border-style:inset">Rreth nesh</h1><hr style="border-top: 2px solid red;"><br>
+	<p>Infinity Digital Agency eshte kompani e cila merrret me zhvillimin e Website-eve dhe Softuereve
+	  te ndryshem. Ne kemi qene gjithmone ne sherbim te klienteve tane dhe ata asnjehere nuk jane 
+	  zhgenjyer me punen qe e kemi bere.</p>
+	  <div class="social">
+		<a href="https://www.facebook.com/Infinity-Digital-Agency-105978701219535" target="_blank"><span class="fab fa-facebook-f"></span></a>
+		<a href="https://www.instagram.com/infinity_digitalagency/" target="_blank"><span class="fab fa-instagram"></span></a>
+		<a href="#" target="_blank"><span class="fab fa-twitter"></span></a>
+	  </div>
+  </div>
+	  
+	<div class="divv" style="flex-grow: 1; flex: 30%;"><h1 style="margin-bottom: 2px;">Adresa</h1><hr style="border-top: 2px solid red;">
+	  <div class="div2" style="margin-top: 5px;">
+		<div class="place">
+		  <span class="fas fa-map-marker-alt"></span>
+		  <span class="text">Prishtinë, Kosovë</span>
+		</div>
+  <div class="phone">
+		  <span class="fas fa-phone-alt"></span>
+		  <span class="text">+383 44685122</span>
+		</div>
+   <div class="phone">
+		  <span class="fas fa-phone-alt"></span>
+		  <span class="text">+383 49796484</span>
+		</div>
+  <div class="email">
+		  <span class="fas fa-envelope"></span>
+		  <span class="text">infinitydigitalagency01@gmail.com</span>
+		</div>  
+	  </div>
+	</div>
+  
+		<!-- Djathtas -->
+  
+	<div class="divv" style="flex-grow: 1; flex: 30%;"><h1 style="margin-bottom: 2px; border-style:inset">Na kontaktoni</h1><hr style="border-top: 2px solid red;">
+	  <div class="form1">
+		<form action="/action_page.php">
+		  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+	  
+		  <textarea id="subject" name="subject" placeholder="Write something.." style="height:70px"></textarea>
+	  
+		  <input type="submit" value="Submit">
+		</form>
+	  </div>       
+  </div>
+  
+  
+  </div>
+  
+  <div class="bottom" style="background-color: #222;padding-bottom: 10px;">
+	<center>
+			  <span style="color: white;" class="credit">Created By <a style="color: rgb(214, 42, 42);" href="https://www.facebook.com/Infinity-Digital-Agency-105978701219535">Infinity Digital Agency</a> | </span>
+			  <span style="color: white;" class="far fa-copyright"></span><span style="color: white;"> 2020 All rights reserved.</span>
+			</center>
+	</div>
+  
+</body>
+</html>

@@ -1,0 +1,487 @@
+<html manifest=".appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infinity Digital Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="another.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/467ae1d3df.js" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <style>
+     
+    .badi{
+      background-color: rgb(26, 23, 23);
+    }
+      
+     
+      #mySidenav a {
+        margin-top: 50px;
+        position: absolute;
+        left: -80px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 5px 5px 0;
+      }
+      .badi {
+  display: flex;
+  align-items: stretch;
+  background-color: #222;
+}
+
+.badi > div {
+  background-color:  #222;
+  color: white;
+  margin: 10px;
+  padding: 10px 10px;
+  text-align: center;
+  line-height: 20px; /* Fontin e P */
+  font-size: 12px;
+}
+
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 18px;
+}
+
+
+
+#lista::before {content: "•"; color: red}
+#lista::before {content: "•"; color: red;
+  display: inline-block; width: 1em;
+  margin-left: -1em}
+
+
+  .mySlides {display: none;}
+.mySlides img {vertical-align: middle;
+    height: 300px;
+}
+
+.slideshow-container {
+  max-width: 600px;
+  height: 300px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+  
+.btn1, .btn2 {
+  background-color: rgb(13, 119, 138);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.btn1, .btn2 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.epara{
+  display: flex;
+}
+@media (max-width: 800px) {
+  .epara {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 800px) {
+  .edyta {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 800px) {
+  .slideshow-container {
+    margin-top: -150px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .edytani {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 800px) {
+  .btnbtn {
+    display: block;
+    margin: 15px;
+  }
+}
+    </style>
+    <script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="index.html" id="home"><img src="logo.png" id="foto"></a></li>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="about_us.html">About us</a></li>
+            <li class="item"><a href="services.html">Services</a></li>
+            <li class="item"><a href="contacts.html">Contact Us</a></li>
+            <li class="item"><a href="projects.html">Projects</a></li>
+            <li class="item"><a href="others.html">Price List</a></li>
+            </li>
+            <li class="item button"><a href="login.html">LOG IN</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+
+    
+
+    <section style="min-height: calc(100vh - 100px);  overflow: hidden; width: 100%;">
+      <div class="epara">
+      <div style="flex: 45%; float: left; flex-grow: 5;">
+        <div style="padding: 50px;">
+          <h1 style="color:rgb(13, 119, 138)">Infinity Digital Agency</h1><br>
+          <p>Infinity Digital Agency eshte kompani e cila merrret me zhvillimin e Website-eve dhe Softuereve
+            te ndryshem. Ne kemi qene gjithmone ne sherbim te klienteve tane dhe ata asnjehere nuk jane 
+            zhgenjyer me punen qe e kemi bere.
+          </p>
+          <br>
+          <button class="neon-btn btn one"><a href="about.html"></a>Me shume</button>
+        </div>
+      </div>
+      <div style="flex:50%; text-align: center; float: right; flex-grow: 5;" >
+        <div style="margin-right:50px; margin-top:50px; ">
+          <video width="520px" height="370px" autoplay muted loop>
+            <source src="INFINITY.mp4" type="video/mp4" />
+        </div>
+      </div>	
+    </div>
+    </section>
+
+  
+
+  </section>
+  <!--services------>
+  <section class="services" style="width: 100%;">
+      <!--heading-->
+      <div class="services-heading">
+          <h2 style="color:rgb(18, 161, 161)" id="headi123">Shërbimet qe ne i ofrojme</h2>
+          <p>Ky Website eshte Official i Kompanise tone, andaj per cfaredo pikepyetje, kerkesa dhe sherbime ju lutem na kontaktoni</p>
+      </div>
+      <!--box-container-------------->
+      <div class="box-container">
+          <!--box-1-------->
+          <div class="box">
+              <img src="images/login.svg">
+              <font>Log-In ne Website-in tone</font>
+              <p>Për të filluar procesin, ju lutemi hyni në sistemin tonë të sigurt. Gjithçka që ju nevojitet eshte qe te komunikoni me ne permes Log-in Formes, email-it ose edhe ne Social media. Ju faleminderit!
+              </p>
+              <!--btn------>
+              <a href="login.html">Log In</a>
+          </div>
+          <!--box-2-------->
+          <div class="box">
+              <img src="images/account view.svg">
+              <font>Sherbimet Tona</font>
+              <p><abbr title="sherbimet"> Sherbimet </abbr>tona jane te gjitheaneshme. Duke filluar nga krijimi i Websiteve, menaxhimi dhe perkujdesja e tyre24 ore, krijimi i Aplikacioneve Mobile si dhe Social Media MArketing.</p>
+              <!--btn-------->
+              <a href="services.html">View</a>
+          </div>
+          <!--box-3-------->
+          <div class="box">
+              <img src="images/payment method.svg">
+              <font>Zgjidhe planin tuaj</font>
+              <p>Tek ne i keni te gjitha menyrat e pageses. Per te gjithe Klientet tane besnik, ofrojme zbritje te ndryshme, por edhe sherbime shtese falas.
+                <h5 style="margin-left:50px;"><u>Disa nga Bankat Partnere</u></h5>
+                <ol>
+
+                  <li>BKT</li>
+                  <ul>
+                    <li>Ne Shqiperi</li>
+                    <li>Ne Kosove</li>
+                  </ul>
+                  <li>TEB</li>
+                  <li>BPB</li>
+                </ol>
+              </p>
+              <!--btn-------->
+              <a href="#">Select Plan</a>
+          </div>
+          <!--box-4------>
+          <div class="box">
+              <img src="images/lock.svg">
+              <font>Mirembajtja</font>
+              <p>Ofrojme mirembajtje ne cdo moment dhe kohe. Stafi yne i kualifikuar ju mundesone qe te keni
+                qasja dhe bashkepunim ne cdo kohe. <mark> Mirembajtja 24/7.</mark>
+                Munde te kontaktoni:
+                <ul>
+                <li id="lista"><span>Ne numrin e Telefonit</span></li>
+                <li id="lista"><span>Ne zyren tone</span></li>
+              </ul>
+              </p>
+              <!--btn------>
+              <a href="#home">Log In</a>
+          </div>
+          <!--box-1-------->
+          <div class="box">
+            
+            <img src="images/document.svg">
+            
+            
+              <p>Gjithmone kemi pasur sukses ne punen me klientet tane. Andaj mos u hamendeso, zgjedh <span style="color:rgb(18, 131, 131)">INFINITY DIGITAL AGENCY</span></p>
+              <!--btn------>
+              <a href="#">View</a>
+          </div>
+      </div>
+  </section>
+
+<article>
+<div class="edyta" style="width: 50%; margin: auto; background-color: #f1f1f1;" class="table-wrapper">
+  <table style="width: 100%; border-radius:5%; background-color:#f1f1f1" border="2"  cellspacing="0" cellpadding="0"; class="fl-table">
+    <thead>
+      
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="about_us.html">Stafi</a></td>
+        <td>4 punetor</td>
+      </tr>
+      <tr>
+        <td>Objekti</td>
+        <td>120m<sup>2</sup></td>
+      </tr>
+      <tr>
+        <td>Kontakte te vazhdueshme</td>
+        <td>Po</td>
+      </tr>
+      <tr>
+        <td>Backup</td>
+        <td>Po</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</article>
+<br>
+<div class="clear10">
+		<canvas id="footerCanvas" height="100" width="200" style="width: 100%; height: 10px;">
+  </div>
+  <br>
+
+  <p class="edytani" style="text-align:center">Disa nga partneret tane</p>
+  <br>
+
+     <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="img_proj/insajd.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="img_proj/tesla.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="img_proj/trepca.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img_proj/cine.png" style="width:100%">
+    </div>
+    
+    </div>
+    <br>
+    
+    <div class="dotss" style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+    <div class="btnbtn" style="position: relative; height: 50px;">
+      <div class="center">
+      <button class="btn1">Fsheh reklamat</button>
+      <button class="btn2">Shfaq reklamat</button>
+    </div>
+  </div>
+
+<br>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides"); //fotot
+        var dots = document.getElementsByClassName("dot"); //pikat
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2500); 
+      }
+      </script>
+      <script>
+              $(document).ready(function(){
+  $(".btn1").click(function(){
+    $(".slideshow-container").hide();
+    $(".dotss").hide();
+  });
+  
+  $(".btn2").click(function(){
+    $(".slideshow-container").show();
+    $(".dotss").show();
+  });
+});
+      </script>
+
+
+<div class="footer">
+  <div class="divv" style="flex-grow: 1; flex: 30%;">
+  <h1 style="margin-bottom: 2px;">Rreth nesh</h1><hr style="border-top: 2px solid red;"><br>
+  <p>Infinity Digital Agency eshte kompani e cila merrret me zhvillimin e Website-eve dhe Softuereve
+    te ndryshem. Ne kemi qene gjithmone ne sherbim te klienteve tane dhe ata asnjehere nuk jane 
+    zhgenjyer me punen qe e kemi bere.</p>
+    <div class="social">
+      <a href="https://www.facebook.com/Infinity-Digital-Agency-105978701219535" target="_blank"><span class="fab fa-facebook-f"></span></a>
+      <a href="https://www.instagram.com/infinity_digitalagency/" target="_blank"><span class="fab fa-instagram"></span></a>
+      <a href="#" target="_blank"><span class="fab fa-twitter"></span></a>
+    </div>
+</div>
+    
+  <div class="divv" style="flex-grow: 1; flex: 30%;"><h1 style="margin-bottom: 2px;">Adresa</h1><hr style="border-top: 2px solid red;">
+    <div class="div2" style="margin-top: 5px;">
+      <div class="place">
+        <span class="fas fa-map-marker-alt"></span>
+        <span class="text">Prishtinë, Kosovë</span>
+      </div>
+<div class="phone">
+        <span class="fas fa-phone-alt"></span>
+        <span class="text">+383 44685122</span>
+      </div>
+ <div class="phone">
+        <span class="fas fa-phone-alt"></span>
+        <span class="text">+383 49796484</span>
+      </div>
+<div class="email">
+        <span class="fas fa-envelope"></span>
+        <span class="text">infinitydigitalagency01@gmail.com</span>
+      </div>  
+    </div>
+  </div>
+
+      <!-- Djathtas -->
+
+      
+
+  <div class="divv" style="flex-grow: 1; flex: 30%;"><h1 style="margin-bottom: 2px" >Na kontaktoni</h1><hr style="border-top: 2px solid red;">
+    <div class="form1">
+      <form name="myForm" onsubmit="return validateForm()" method="post" required>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:70px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>       
+</div>
+
+<script>
+  function validateForm(){  
+var name=document.myForm.firstname.value;  
+  
+if (name==null || name==""){  
+  alert("Shkruaj emrin!");  
+  return false;  
+}else if(name.length<6){  
+  alert("Username duhet te jete me i gjate se 4 karaktere");  
+  return false;  
+  }  
+  else{
+    alert("Mesazhi u dergua me sukses!");
+    return true;
+  };
+}  
+  </script>
+
+</div>
+
+<div class="bottom" style="background-color: #222;padding-bottom: 10px;">
+  <center>
+            <span style="color: white;" class="credit">Created By <a style="color: rgb(214, 42, 42);" href="https://www.facebook.com/Infinity-Digital-Agency-105978701219535">Infinity Digital Agency</a> | </span>
+            <span style="color: white;" class="far fa-copyright"></span><span style="color: white;"> 2020 All rights reserved.</span>
+          </center>
+  </div>
+
+  
+
+</body>
+</html>
